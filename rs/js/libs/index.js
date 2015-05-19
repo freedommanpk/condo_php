@@ -1,5 +1,18 @@
 // Slider in header
 $(document).ready(function () {
+    $('[bt-dialog="bt"]').click(function () {
+        var n = $(this).attr('name');
+        var $d = $('#dialog_' + n + '').dialog({
+            show: {effect: "fade", duration: 500},
+            hide: {effect: "fade", duration: 500},
+            width: 550,
+            modal: true,
+            resizable: false
+        });
+        $d.find('.bt-close').on('click',function(){
+            $d.dialog('close');
+        });
+    });
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
