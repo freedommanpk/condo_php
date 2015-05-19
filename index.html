@@ -4,14 +4,15 @@
         <title>Condo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="keywords" content="Flat UI Design, UI design, UI, user interface, web interface design, user interface design, Flat web design, Bootstrap, Bootflat, Flat UI colors, colors">
-        <meta name="description" content="The complete style of the Bootflat Framework.">
+        <meta name="keywords" content="Condo">
+        <meta name="description" content="Condo">
         <!-- Libs -->
         <script src="rs/js/libs/jquery.cookie.js" type="text/javascript"></script>
         <script src="rs/js/libs/jquery.js" type="text/javascript"></script>
         <script src="rs/js/libs/bootstrap.min.js" type="text/javascript"></script>
         <script src="rs/js/libs/html5shiv.js" type="text/javascript"></script> <!-- ไว้แสดงผลกับ ie8 -->
         <script src="rs/js/libs/site.min.js" type="text/javascript"></script>
+        <script src="rs/js/libs/fn.js" type="text/javascript"></script>
         <!--Slide-->
         <script src="rs/js/libs/jquery.bxslider.js" type="text/javascript"></script>
         <script src="rs/js/libs/jquery.bxslider.min.js" type="text/javascript"></script>
@@ -22,254 +23,87 @@
         <link href="rs/css/site.css" rel="stylesheet" type="text/css"/>
         <link href="rs/css/site.min.css" rel="stylesheet" type="text/css"/>
         <link href="rs/css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
-
-        <style>
-            .bx-pager{
-                display: none;
+        <script>
+            function aa(){
+                alert();
             }
-            .bx-wrapper{
-                margin: 1px 0px 40px 8px;
-            }
-            .slider{
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline
-            }
-        </style>
-        <style>
-            body {
-                // text-align:center;
-                width: 1024px;
-                text-align: left;
-                background-color: #eee;
-                background-image: url(data:image/gif;base64,R0lGODlhCAAIAJEAAMzMzP///////wAAACH5BAEHAAIALAAAAAAIAAgAAAINhG4nudroGJBRsYcxKAA7);
-            }
-
-            #tabs {
-                overflow: hidden;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-
-            #tabs li {
-                float: left;
-                margin: 0 -15px 0 0;
-            }
-
-            #tabs a {
-                float: left;
-                position: relative;
-                padding: 0 40px;
-                height: 0;
-                line-height: 30px;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: #fff;      
-                border-right: 30px solid transparent;
-                border-bottom: 30px solid #3D3D3D;
-                border-bottom-color: #777\9;
-                opacity: .3;
-                filter: alpha(opacity=30);      
-            }
-
-            #tabs a:hover,
-            #tabs a:focus {
-                border-bottom-color: #2ac7e1;
-                opacity: 1;
-                filter: alpha(opacity=100);
-            }
-
-            #tabs a:focus {
-                outline: 0;
-            }
-
-            #tabs #current {
-                z-index: 3;
-                border-bottom-color: #3d3d3d;
-                opacity: 1;
-                filter: alpha(opacity=100);      
-            }
-
-            /* ----------- */
-            #content {
-                background: #fff;
-                border-top: 2px solid #3d3d3d;
-                padding: 2em;
-
-            }
-
-            #content h2,
-            #content h3,
-            #content p {
-                margin: 0 0 15px 0;
-            }  
-            #about {
-                color: #999;
-                text-align: center;
-                font: 0.9em Arial, Helvetica;
-            }
-
-            #about a {
-                color: #777;
-            } 
-
-            .wrapper {
-                height:100vh;
-                display:flex;
-                // Direction of the items, can be row or column
-                flex-direction: column;
-            }
-
-            header{
-                height: 0px;
-                margin-bottom: 320px;
-                background-color: white;
-            }
-            topheader{
-                height: 30px;
-            }
-            topheader .logo {
-                float:left;
-                width:800px;
-                //background-color:#f5f5f5;
-            }
-            topheader .info {
-                overflow:hidden;
-            }
-
-            main {
-                flex:1;
-            }
-            main .sideleft{
-
-                width:824px;
-            }
-            main .sideads{
-
-                width:200px;
-            }
-            html, body {
-                height: 100%;
-            }
-
-            html {
-                display: table;
-                margin: auto;
-            }
-            .body_bg{
-                background-color: white;
-            }
-            .maincontent{
-                margin-top: 430px;
-            }
-        </style>
+        </script>
     </head>
     <body>
         <div class="body_bg">
             <topheader>
                 <div class="logo"><img src="images/header_logo.png"></div>
-                <div class="advertisement">asdasds</div>
+                <div class="advertisement2" ><button type="button" onclick="aa();" class="btn btn-primary">เข้าสู่ระบบ / สมัครสมาชิก</button> </div>
             </topheader>
             <header>
                 <ul class="bxslider slider">
-                    <li><img src="images/t4.png" title="Funky roots" /></li>
-                    <li><img src="images/t2.png" title="The long and winding road" /></li>
-                    <li><img src="images/t3.png" title="Happy trees" /></li>
-                    <li><img src="images/t.png" title="Happy trees" /></li>
+                    <li><img src="images/t4.png" title="โครงการบ้านอุดมสุข สุขสนุกสุขสันต์" /></li>
+                    <li><img src="images/t2.png" title="โครงการบ้านคลองแสนแสบ" /></li>
+                    <li><img src="images/t3.png" title="ชีวิตดี๊ ดีกับโปรโมชั่นลดลมร้อน" /></li>
+                    <li><img src="images/t.png" title="โครงการใหม่ ใส่ใจดูแลคุณ" /></li>
                 </ul>
             </header>
             <main>
                 <div class="maincontent">
+                    <div id="language">
+                        <ul>
+                            <li>
+                                <img src="images/th.png">
+                            </li>
+                            <li>
+                                <img src="images/flag_uk_b.gif">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main_body">
+                        <ul id="tabs">
+                            <li><a href="home.html" name="#tab1">ข่าว</a></li>
+                            <li><a href="sell.html" name="#tab2">หาซื้อ</a></li>
+                            <li><a href="buy.html" name="#tab3">โพสขาย</a></li>
+                            <li><a href="tem.html" name="#tab4">หาเช่า</a></li> 
+                            <li><a href="tem.html" name="#tab5">ปล่อยเช่า</a></li>
+                            <li><a href="tem.html" name="#tab6">ดูแล</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidebar_body">
+                        <div id="hireme" class="orange looking tagged">
+                            <a class="top">โฆษณา</a>
+                            <ul>
+                                <li>
+                                    <img src="http://pagead2.googlesyndication.com/simgad/15253963400181261768">
+                                </li>
+                            </ul>
+                        </div>
 
-                    <ul id="tabs">
-                        <li><a href="home.html" name="#tab1">ข่าว</a></li>
-                        <li><a href="sell.html" name="#tab2">หาซื้อ</a></li>
-                        <li><a href="buy.html" name="#tab3">โพสขาย</a></li>
-                        <li><a href="tem.html" name="#tab4">หาเช่า</a></li> 
-                        <li><a href="tem.html" name="#tab4">ปล่อยเช่า</a></li>
-                        <li><a href="tem.html" name="#tab4">ดูแล</a></li>
-                        <li><a href="tem.html" name="#tab4">My Chanal</a></li>
-                    </ul>
-                    <div id="content">
+                    </div>
+
+
+                    <div id="content"> 
                         <div id="tab1">
-                            <!--                                <h2>Lorem ipsum sit amet</h2>
-                                                            <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-                                                            <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
-                                                            <h3>Pellentesque habitant</h3>
-                                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>  -->
+                            q
                         </div>
                         <div id="tab2"> 
-                            <!--                    <h2>Vivamus fringilla suscipit justo</h2>
-                                                <p>Aenean dui nulla, egestas sit amet auctor vitae, facilisis id odio. Donec dictum gravida feugiat.</p>
-                                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pretium elit et erat condimentum et volutpat lorem vehicula</p>
-                            
-                                                <p>Morbi tincidunt pharetra orci commodo molestie. Praesent ut leo nec dolor tempor eleifend.</p>    -->
+
                         </div>
                         <div id="tab3"> 
-                            <!--                    <h2>Phasellus non nibh</h2>
-                                                <p>Non erat laoreet ullamcorper. Pellentesque magna metus, feugiat eu elementum sit amet, cursus sed diam. Curabitur posuere porttitor lorem, eu malesuada tortor faucibus sed.</p>
-                                                <h3>Duis pulvinar nibh vel urna</h3>
-                                                <p>Donec purus leo, porttitor eu molestie quis, porttitor sit amet ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan ornare elit id imperdiet. </p>
-                                                <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. </p>-->
+                            e
                         </div>
                         <div id="tab4"> 
-                            <!--                    <h2>Cum sociis natoque penatibus</h2>
-                                                <p>Magnis dis parturient montes, nascetur ridiculus mus. Nullam ac massa quis nisi porta mollis venenatis sit amet urna. Ut in mauris velit, sed bibendum turpis.</p>
-                                                <p>Nam ornare vulputate risus, id volutpat elit porttitor non. In consequat nisi vel lectus dapibus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent bibendum sagittis libero.</p>
-                                                <h3>Imperdiet sem interdum nec</h3>
-                                                <p>Mauris rhoncus tincidunt libero quis fringilla.</p>    -->
+                            r
+                        </div>
+                        <div id="tab5"> 
+                            t
+                        </div>
+                        <div id="tab6"> 
+                            y
                         </div>
                     </div>
                 </div>
             </main>
             <footer class="site-footer">
-                <h4>thIS IS FOOTER</h4>
+                บริษัท ค้นหาคอนโด ภูเก็ต จำกัด | 999 ม.4 ต.ฉลอง อ.เมือง จ.ภูเก็ต 84444<br>
+                โทร.0989898989 อีเมล์.homephuket@gmail.com 
             </footer>
         </div>
     </body>
-
-    <script>
-        function resetTabs() {
-            $("#content > div").hide(); //Hide all content
-            $("#tabs a").attr("id", ""); //Reset id's      
-        }
-
-        var myUrl = window.location.href; //get URL
-        var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2     
-        var myUrlTabName = myUrlTab.substring(0, 4); // For the above example, myUrlTabName = #tab
-
-        (function () {
-            $("#content > div").hide(); // Initially hide all content
-            $("#tabs li:first a").attr("id", "current"); // Activate first tab
-            $("#content > div:first").fadeIn(); // Show first tab content
-
-            $("#tabs a").on("click", function (e) {
-                e.preventDefault();
-                if ($(this).attr("id") == "current") { //detection for current tab
-                    return;
-                }
-                else {
-                    resetTabs();
-                    $(this).attr("id", "current"); // Activate this
-                    $($(this).attr('name')).fadeIn(); // Show content for current tab
-                }
-                var tabname = $(this).attr('name');
-                $(tabname).load($(this).attr('href'));
-            });
-
-            for (i = 1; i <= $("#tabs li").length; i++) {
-                if (myUrlTab == myUrlTabName + i) {
-                    resetTabs();
-                    $("a[name='" + myUrlTab + "']").attr("id", "current"); // Activate url tab
-                    $(myUrlTab).fadeIn(); // Show url tab content        
-                }
-            }
-        })();
-
-    </script>
 </html>
