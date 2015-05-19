@@ -6,32 +6,23 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="keywords" content="Flat UI Design, UI design, UI, user interface, web interface design, user interface design, Flat web design, Bootstrap, Bootflat, Flat UI colors, colors">
         <meta name="description" content="The complete style of the Bootflat Framework.">
-
+        <!-- Libs -->
         <script src="rs/js/libs/jquery.cookie.js" type="text/javascript"></script>
         <script src="rs/js/libs/jquery.js" type="text/javascript"></script>
-        <script src="rs/js/libs/application.js" type="text/javascript"></script>
         <script src="rs/js/libs/bootstrap.min.js" type="text/javascript"></script>
         <script src="rs/js/libs/html5shiv.js" type="text/javascript"></script> <!-- ไว้แสดงผลกับ ie8 -->
-        <script src="rs/js/libs/respond.min.js" type="text/javascript"></script>
         <script src="rs/js/libs/site.min.js" type="text/javascript"></script>
+        <!--Slide-->
         <script src="rs/js/libs/jquery.bxslider.js" type="text/javascript"></script>
         <script src="rs/js/libs/jquery.bxslider.min.js" type="text/javascript"></script>
+        <!-- Index page -->
+        <script src="rs/js/libs/index.js" type="text/javascript"></script>
 
         <link href="rs/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="rs/css/site.css" rel="stylesheet" type="text/css"/>
         <link href="rs/css/site.min.css" rel="stylesheet" type="text/css"/>
         <link href="rs/css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
-        <script>
-            //Slider Function 
-            $(document).ready(function () {
-                $('.bxslider').bxSlider({
-                    mode: 'fade',
-                    captions: true,
-                    auto: true,
-                    autoControls: true,
-                });
-            });
-        </script>
+
         <style>
             .bx-pager{
                 display: none;
@@ -56,8 +47,6 @@
                 background-color: #eee;
                 background-image: url(data:image/gif;base64,R0lGODlhCAAIAJEAAMzMzP///////wAAACH5BAEHAAIALAAAAAAIAAgAAAINhG4nudroGJBRsYcxKAA7);
             }
-
-            /* ------------------------------------------------- */
 
             #tabs {
                 overflow: hidden;
@@ -138,7 +127,7 @@
 
             header{
                 height: 0px;
-                margin-bottom: 420px;
+                margin-bottom: 320px;
                 background-color: white;
             }
             topheader{
@@ -152,11 +141,17 @@
             topheader .info {
                 overflow:hidden;
             }
-            footer{
-                height: 30px;
-            }
+
             main {
                 flex:1;
+            }
+            main .sideleft{
+
+                width:824px;
+            }
+            main .sideads{
+
+                width:200px;
             }
             html, body {
                 height: 100%;
@@ -169,13 +164,16 @@
             .body_bg{
                 background-color: white;
             }
+            .maincontent{
+                margin-top: 430px;
+            }
         </style>
     </head>
     <body>
         <div class="body_bg">
             <topheader>
                 <div class="logo"><img src="images/header_logo.png"></div>
-                <div class="info" align="right">sdsd</div>
+                <div class="advertisement">asdasds</div>
             </topheader>
             <header>
                 <ul class="bxslider slider">
@@ -186,44 +184,50 @@
                 </ul>
             </header>
             <main>
-                <ul id="tabs">
-                    <li><a href="home.html" name="#tab1">One</a></li>
-                    <li><a href="sell.html" name="#tab2">Two</a></li>
-                    <li><a href="buy.html" name="#tab3">Three</a></li>
-                    <li><a href="tem.html" name="#tab4">Four</a></li>    
-                </ul>
-                <div id="content">
-                    <div id="tab1">4
-                        <!--                    <h2>Lorem ipsum sit amet</h2>
-                                            <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-                                            <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
-                                            <h3>Pellentesque habitant</h3>
-                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>    -->
-                    </div>
-                    <div id="tab2">3
-                        <!--                    <h2>Vivamus fringilla suscipit justo</h2>
-                                            <p>Aenean dui nulla, egestas sit amet auctor vitae, facilisis id odio. Donec dictum gravida feugiat.</p>
-                                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pretium elit et erat condimentum et volutpat lorem vehicula</p>
-                        
-                                            <p>Morbi tincidunt pharetra orci commodo molestie. Praesent ut leo nec dolor tempor eleifend.</p>    -->
-                    </div>
-                    <div id="tab3">2
-                        <!--                    <h2>Phasellus non nibh</h2>
-                                            <p>Non erat laoreet ullamcorper. Pellentesque magna metus, feugiat eu elementum sit amet, cursus sed diam. Curabitur posuere porttitor lorem, eu malesuada tortor faucibus sed.</p>
-                                            <h3>Duis pulvinar nibh vel urna</h3>
-                                            <p>Donec purus leo, porttitor eu molestie quis, porttitor sit amet ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan ornare elit id imperdiet. </p>
-                                            <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. </p>-->
-                    </div>
-                    <div id="tab4">1
-                        <!--                    <h2>Cum sociis natoque penatibus</h2>
-                                            <p>Magnis dis parturient montes, nascetur ridiculus mus. Nullam ac massa quis nisi porta mollis venenatis sit amet urna. Ut in mauris velit, sed bibendum turpis.</p>
-                                            <p>Nam ornare vulputate risus, id volutpat elit porttitor non. In consequat nisi vel lectus dapibus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent bibendum sagittis libero.</p>
-                                            <h3>Imperdiet sem interdum nec</h3>
-                                            <p>Mauris rhoncus tincidunt libero quis fringilla.</p>    -->
+                <div class="maincontent">
+
+                    <ul id="tabs">
+                        <li><a href="home.html" name="#tab1">ข่าว</a></li>
+                        <li><a href="sell.html" name="#tab2">หาซื้อ</a></li>
+                        <li><a href="buy.html" name="#tab3">โพสขาย</a></li>
+                        <li><a href="tem.html" name="#tab4">หาเช่า</a></li> 
+                        <li><a href="tem.html" name="#tab4">ปล่อยเช่า</a></li>
+                        <li><a href="tem.html" name="#tab4">ดูแล</a></li>
+                        <li><a href="tem.html" name="#tab4">My Chanal</a></li>
+                    </ul>
+                    <div id="content">
+                        <div id="tab1">
+                            <!--                                <h2>Lorem ipsum sit amet</h2>
+                                                            <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
+                                                            <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
+                                                            <h3>Pellentesque habitant</h3>
+                                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>  -->
+                        </div>
+                        <div id="tab2"> 
+                            <!--                    <h2>Vivamus fringilla suscipit justo</h2>
+                                                <p>Aenean dui nulla, egestas sit amet auctor vitae, facilisis id odio. Donec dictum gravida feugiat.</p>
+                                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pretium elit et erat condimentum et volutpat lorem vehicula</p>
+                            
+                                                <p>Morbi tincidunt pharetra orci commodo molestie. Praesent ut leo nec dolor tempor eleifend.</p>    -->
+                        </div>
+                        <div id="tab3"> 
+                            <!--                    <h2>Phasellus non nibh</h2>
+                                                <p>Non erat laoreet ullamcorper. Pellentesque magna metus, feugiat eu elementum sit amet, cursus sed diam. Curabitur posuere porttitor lorem, eu malesuada tortor faucibus sed.</p>
+                                                <h3>Duis pulvinar nibh vel urna</h3>
+                                                <p>Donec purus leo, porttitor eu molestie quis, porttitor sit amet ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan ornare elit id imperdiet. </p>
+                                                <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. </p>-->
+                        </div>
+                        <div id="tab4"> 
+                            <!--                    <h2>Cum sociis natoque penatibus</h2>
+                                                <p>Magnis dis parturient montes, nascetur ridiculus mus. Nullam ac massa quis nisi porta mollis venenatis sit amet urna. Ut in mauris velit, sed bibendum turpis.</p>
+                                                <p>Nam ornare vulputate risus, id volutpat elit porttitor non. In consequat nisi vel lectus dapibus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent bibendum sagittis libero.</p>
+                                                <h3>Imperdiet sem interdum nec</h3>
+                                                <p>Mauris rhoncus tincidunt libero quis fringilla.</p>    -->
+                        </div>
                     </div>
                 </div>
             </main>
-            <footer>
+            <footer class="site-footer">
                 <h4>thIS IS FOOTER</h4>
             </footer>
         </div>
@@ -245,7 +249,6 @@
             $("#content > div:first").fadeIn(); // Show first tab content
 
             $("#tabs a").on("click", function (e) {
-
                 e.preventDefault();
                 if ($(this).attr("id") == "current") { //detection for current tab
                     return;
@@ -255,9 +258,8 @@
                     $(this).attr("id", "current"); // Activate this
                     $($(this).attr('name')).fadeIn(); // Show content for current tab
                 }
-                console.log($(this).attr('name'));
-                //$(this).load($(this).attr('href'));
-                //alert($(this).attr('href'));
+                var tabname = $(this).attr('name');
+                $(tabname).load($(this).attr('href'));
             });
 
             for (i = 1; i <= $("#tabs li").length; i++) {
