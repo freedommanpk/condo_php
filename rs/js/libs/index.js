@@ -1,5 +1,6 @@
-// Slider in header
+
 $(document).ready(function () {
+	// dialog (jquery ui)
     $('[bt-dialog="bt"]').click(function () {
         var n = $(this).attr('name');
         var $d = $('#dialog_' + n + '').dialog({
@@ -9,59 +10,32 @@ $(document).ready(function () {
             modal: true,
             resizable: false
         });
-        $d.find('.bt-close').on('click',function(){
+        $d.find('.bt-close').on('click', function () {
             $d.dialog('close');
         });
     });
+	// Slider in header
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
         auto: true,
         autoControls: true
     });
-
-
-    function resetTabs() {
-        $("#content > div").hide(); //Hide all content
-        $("#tabs a").attr("id", ""); //Reset id's      
-    }
-
-    var myUrl = window.location.href; //get URL
-    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2     
-    var myUrlTabName = myUrlTab.substring(0, 4); // For the above example, myUrlTabName = #tab
-
-    (function () {
-        $("#content > div").hide(); // Initially hide all content
-        $("#tabs li:first a").attr("id", "current"); // Activate first tab
-        $("#content > div:first").fadeIn(); // Show first tab content
-        $("#tabs a").on("click", function (e) {
-            e.preventDefault();
-            if ($(this).attr("id") == "current") { //detection for current tab
-                return;
-            }
-            else {
-                resetTabs();
-                var tabname = $(this).attr('name');
-                $(tabname).fadeOut().load($(this).attr('href'), function (response, status, xhr) {
-                    if (status == "error") {
-                        $(this).html('Error').fadeIn();
-                    }
-                    else
-                    {
-                        $(this).fadeIn();
-                    }
-                });
-                $(this).attr("id", "current");
-            }
-
-        });
-
-        for (i = 1; i <= $("#tabs li").length; i++) {
-            if (myUrlTab == myUrlTabName + i) {
-                resetTabs();
-                $("a[name='" + myUrlTab + "']").attr("id", "current"); // Activate url tab
-                $(myUrlTab).fadeIn(); // Show url tab content        
-            }
+    
+//BACK TO TOP 
+    var offset = 120;
+    var duration = 500;
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
         }
-    })();
+    });
+
+    jQuery('.back-to-top').click(function (event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    });
 });

@@ -1,14 +1,65 @@
-// Kritsada Lawan;
-body {
-    // text-align:center;
-    width: 1024px;
-    text-align: left;
-    background-color: #eee;
-    background-image: url(data:image/gif;base64,R0lGODlhCAAIAJEAAMzMzP///////wAAACH5BAEHAAIALAAAAAAIAAgAAAINhG4nudroGJBRsYcxKAA7);
-    position: relative; /* For scrollyspy */
-    /*font-family: 'Lato', sans-serif !important;*/
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-    /*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+/* dedvelop by kritsada lawan 09-06-2015 */
+/*                                       */
+/*                                       */
+/*              web dev                  */
+/*       kritsitephuket@gmail.com        */
+/*                                       */
+/*                                       */
+/* dedvelop by kritsada lawan 09-06-2015 */
+
+body,
+html {
+
+    padding:0;
+    color:#000;
+}
+#wrap {
+    width:1000px;
+    margin:0 auto;
+}
+#header {
+    padding:5px 10px;
+}
+h1 {
+    margin:0;
+}
+#nav{ 
+    margin: 5px 0px 5px 0px;
+}
+#nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#nav > span{
+    float: right;
+    margin-top: -20px;
+    padding-right: 10px;
+}
+#main {
+    float:left;
+    width:816px;
+    padding:1px;
+}
+
+#sidebar {
+    float:right;
+    width:180px;
+}
+#footer {
+    clear:both;
+    padding:5px 10px;
+}
+#footer p {
+    margin:0;
+}
+* html #footer {
+    height:1px;
 }
 div#hireme.looking{
     background-image: none;
@@ -40,7 +91,10 @@ div#hireme>ul>li{
     margin: 0!important;
 }
 div#hireme>ul>li>img{
-    width: 180px;
+    width: 162px;
+}
+.logo{
+    margin-left: -40px;
 }
 #tabs {
     overflow: hidden;
@@ -88,43 +142,33 @@ div#hireme>ul>li>img{
     opacity: 1;
     filter: alpha(opacity=100);      
 }
-
 /* ----------- */
 #content {
     background: #fff;
-    //border-top: 2px solid #3d3d3d;
-    margin-top: 50px;
-    height: 500px;
-    //padding: 2em;
-
 }
-
 #content h2,
 #content h3,
 #content p {
-    margin: 0 0 15px 0;
+    margin: 0 0 0px 0;
 }  
 #about {
     color: #999;
     text-align: center;
     font: 0.9em Arial, Helvetica;
 }
-
 #about a {
     color: #777;
 } 
-
 .wrapper {
     height:100vh;
     display:flex;
-    // Direction of the items, can be row or column
     flex-direction: column;
 }
 .bx-pager{
     display: none;
 }
-.bx-wrapper{
-    margin: 1px 0px 40px 8px;
+.bx-controls-auto{
+    display: none;
 }
 .slider{
     margin: 0;
@@ -139,18 +183,6 @@ header{
     margin-bottom: 320px;
     background-color: white;
 }
-topheader{
-    height: 30px;
-}
-topheader .logo {
-    float:left;
-    width:800px;
-    //background-color:#f5f5f5;
-}
-topheader .info {
-    overflow:hidden;
-}
-
 main {
     flex:1;
     margin:0 auto;
@@ -163,20 +195,18 @@ main .sideads{
 
     width:200px;
 }
-html, body {
+html,
+body {
     height: 100%;
-}
+} 
 
 html {
     display: table;
     margin: auto;
 }
-.body_bg{
-    background-color: white;
-}
 .maincontent{
     margin-top: 380px;
-    
+
 }
 .hides{
     display: none;
@@ -205,20 +235,114 @@ html {
     margin-right: 5px;
     height: auto;
 }
-#language{
-    margin-bottom:-25px;
-}
-#language ul
-{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-#language ul li { display: inline; cursor: pointer; }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h4, h5, h6, .h1, .h2, .h4, .h5, .h6 {
     /*font-family: 'Lato', sans-serif !important;*/
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
+
+/*Scoll bar;*/
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #78D3EC; 
+}
+/*End of score bar;*/
+
+
+@font-face {
+    font-family:supermarket;
+    src:url('../fonts/supermarket.eot');
+    src:url('../fonts/supermarket.eot?iefix') format('embedded-opentype'),
+        url('../fonts/supermarket.woff') format("woff"),
+        url('../fonts/supermarket.ttf') format("truetype"),
+        url('../fonts/supermarket.svg#family:supermarket') format("svg");
+}
+h3{
+    font-family: supermarket;
+    font-size: 30px;
+    //font-weight: bold;
+}
+
+// ******************* Login Form ******************* //
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+    line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+    color: white; // In yourUse @body-bg 
+    opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+    opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+    position: relative;
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -0.6em;
+    margin-left: -1.5em;
+    background-color: white;
+    width: 3em;
+    text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+    width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+        margin-top:10px;
+    }		
+}
+
 /* ----------------------------------
  * home
  * ---------------------------------- */
@@ -643,8 +767,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .carbon-poweredby {
     float: right;
     text-align:center;
-    color:#999
-        text-decoration:none !important;
+    color:#999;
+    text-decoration:none !important;
     font-size:11px !important
 }
 /* ----------------------------------
@@ -1091,3 +1215,151 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .site-footer .download .btn-primary {
     color: #fff;
 }
+
+/* news.php */
+/* dedvelop by kritsada lawan 09-06-2015 */
+.post-container {
+    margin: 20px 20px 0 0;  
+    overflow: auto;
+    border-radius: 2px 2px 2px 2px; 
+    -webkit-box-shadow: 0 1px 4px 
+        rgba(0, 0, 0, 0.3), 0 0 40px 
+        rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px 
+        rgba(0, 0, 0, 0.3), 0 0 40px 
+        rgba(0, 0, 0, 0.1) inset;
+}
+.post-container .post-thumb {
+    float: left
+}
+.post-container .post-thumb img {
+    display: block;
+    width: 200px;
+    height:  200px;
+}
+.post-container .post-content {
+    margin-left: 210px
+}
+.post-container .post-title {
+    font-weight: bold;
+    font-size: 200%;
+    border-bottom: 1px solid #aaa;
+    color: #EF4034;
+    margin-bottom:10px;
+}
+
+.post-content > p {
+    padding-bottom: 60px;
+}
+
+.block {
+    border: 1px solid #ddd;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0 0 20px 0;
+}
+.block h2 {
+    color: #EF4034;
+    border-bottom: 2px solid #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 8px 0;
+    margin: 0 0 20px 0;
+}
+.block p {
+    margin: 0 0 20px 0;
+}
+/* Shore more styles */
+.showmore_content {
+    position: relative;
+    overflow: hidden;
+
+}
+.showmore_trigger {
+    width: 90px;;
+    cursor: pointer;
+    float: right;
+    border: none;
+    padding: 0;
+    background: none;
+    display:block;
+    background-color: #FF8000;
+    padding: 10px;
+    font-family: helevetica, Arial, sans-serif;
+    margin:10px auto;
+    color:white;
+    font-weight: bold;
+    z-index:10;
+    position:relative; 
+}
+.showmore_trigger span {
+    display: block;
+}
+.more, .less{
+    float: right;
+}
+
+/* buy.php */
+/* dedvelop by kritsada lawan 19-06-2015 */
+.page2 .left{
+    width:198px;
+    float:left;
+}
+.page2 .box_search{
+    background: #FFFFFF;
+    background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -ms-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -webkit-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    border: 1px solid #777777;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    margin: 5px auto;
+    padding: 12px;
+    position: relative;
+    height:auto;
+}
+.page2 .box_search .header_search{
+    background-color: #00aced;
+    color: #FFF;
+}
+.page2 .condo{
+    width: 615px;
+    float: right;
+    padding-left: 5px;
+
+}
+.example-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+.example-wrapper h3 {
+    background: #555;
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.7);
+    border-radius: 20px 20px 0 0;
+    padding: 6px 20px;
+    font-size: 22px;
+}
+.demo-wrapper{
+    display: block;
+    background: #f0f0f0;
+    background: rgba(0,0,0,0.06);
+    border-radius: 0 0 20px 20px;
+}
+.demo-wrapper .wrapper_img{
+    float:left;
+}
+.demo-wrapper .wrapper_img > img{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.property-info{
+    margin-top: 10px;
+}
+
